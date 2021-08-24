@@ -10,18 +10,24 @@ input_values = [
         (
             ["1", "1"],
             ["1. pies a cm, 2. pulgadas a cm, 3. yardas a cm", "Introduce una opcion: ", "Introduce la cantidad: ", "30.48"],
-            "Revisa tu código",
+            "No funciona la conversión pies a centímetro",
         ),
         # Test case 2
         (
             ["2", "1"],
             ["1. pies a cm, 2. pulgadas a cm, 3. yardas a cm", "Introduce una opcion: ", "Introduce la cantidad: ", "2.54"],
-            "Revisa tu código",
+            "No funciona la conversión pulgadas a centímetro",
         ),
         # Test case 3
         (
             ["-5", "1"],
             ["1. pies a cm, 2. pulgadas a cm, 3. yardas a cm", "Introduce una opcion: ", "Introduce la cantidad: ", "Error"],
-            "Revisa tu código",
+            "No imprimes 'Error' cuando eligen una opción inválida",
+        ),
+        # Test case 4
+        (
+            ["3", "1"],
+            ["1. pies a cm, 2. pulgadas a cm, 3. yardas a cm", "Introduce una opcion: ", "Introduce la cantidad: ", "91.44"],
+            "No funciona la conversión yardas a centímetro",
         ),
     ]
